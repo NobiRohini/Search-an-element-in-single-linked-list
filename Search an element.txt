@@ -1,0 +1,26 @@
+Write a function to search an element in single linked list
+Sol: void search()
+{
+struct node*ptr;
+int search=0;
+int key;
+printf("\n Enter elements to be search");
+scanf("%d",&key);
+while(ptr!=NULL)
+{
+if (key==ptr->data)
+{
+search=1;
+break;
+}
+ptr=ptr->next;
+}
+if search(==1)
+{
+printf("\n element is found");
+}
+else
+{
+printf("\n element is not found");
+}
+}
